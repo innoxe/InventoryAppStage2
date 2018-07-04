@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardCornerRadius="@dimen/card_corner_radius"
+        card_view:cardElevation="@dimen/card_elevetion">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/detail_LinearLayout_padding">
+
+            <TextView
+                style="@style/TextView_heading"
+                android:text="@string/heading_image" />
+
+            <View style="@style/view_heading" />
+
+            <ImageView
+                android:id="@+id/detail_image"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/detail_image_height"
+                android:layout_marginTop="@dimen/detail_image_margintTop"
+                android:contentDescription="@string/desc_image_product"
+                android:src="@drawable/ic_no_photo" />
+
+            <TextView
+                style="@style/TextView_heading"
+                android:text="@string/heading_product" />
+
+            <View style="@style/view_heading" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/label_name_product"
+                        style="@style/TextView_label_heading"
+                        android:text="@string/label_name_product" />
+
+                    <TextView
+                        android:id="@+id/detail_product_name"
+                        style="@style/TextView_text_big"
+                        tools:text="@string/tools_name_product" />
+
+                    <TextView
+                        android:id="@+id/label_price"
+                        style="@style/TextView_label_heading"
+                        android:text="@string/label_price" />
+
+                    <TextView
+                        android:id="@+id/detail_price"
+                        style="@style/TextView_text_big"
+                        tools:text="@string/tools_price_product" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/label_quantity"
+                        style="@style/TextView_label_heading"
+                        android:text="@string/label_quantity" />
+
+                    <TextView
+                        style="@style/TextView_text_small"
+                        android:layout_gravity="center"
+                        android:text="@string/label_in_stock"
+                        tools:text="items in stock" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Button
+                            android:id="@+id/button_decrease_n"
+                            style="@style/value_buttons_edit"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:text="@string/button_minus" />
+
+                        <TextView
+                            android:id="@+id/detail_quantity"
+                            style="@style/TextView_text_small"
+                            android:layout_centerInParent="true"
+                            android:layout_toEndOf="@+id/button_decrease_n"
+                            android:layout_toLeftOf="@id/button_increase_n"
+                            android:layout_toRightOf="@+id/button_decrease_n"
+                            android:layout_toStartOf="@id/button_increase_n"
+                            android:gravity="center"
+                            tools:text="24" />
+
+                        <Button
+                            android:id="@+id/button_increase_n"
+                            style="@style/value_buttons_edit"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:text="@string/button_plus" />
+
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/button_save_change"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/save_change"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/label_color"
+                        style="@style/TextView_label_heading"
+                        android:text="@string/label_color" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/colorShape"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical|end"
+                            android:contentDescription="@string/desc_image_color_product"
+                            android:src="@drawable/shape_color" />
+
+                        <TextView
+                            android:id="@+id/detail_color"
+                            style="@style/TextView_text_small"
+                            android:layout_marginLeft="@dimen/detail_price_marginLeft"
+                            android:layout_marginStart="@dimen/detail_price_marginLeft"
+                            tools:text="@string/tools_color" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/TextView_heading"
+                android:text="@string/heading_supplier" />
+
+            <View style="@style/view_heading" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/label_name_supplier"
+                    style="@style/TextView_label_heading"
+                    android:text="@string/label_name_supplier" />
+
+                <TextView
+                    android:id="@+id/detail_supplier"
+                    style="@style/TextView_text_big"
+                    tools:text="@string/tools_name_supplier" />
+
+                <TextView
+                    android:id="@+id/label_phone_supplier"
+                    style="@style/TextView_label_heading"
+                    android:text="@string/label_phone_supplier" />
+
+                <TextView
+                    android:id="@+id/detail_telephone_supplier"
+                    style="@style/TextView_text_big"
+                    tools:text="@string/tools_phone_supplier" />
+
+                <Button
+                    android:id="@+id/call_supplier"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/call_supplier" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</ScrollView>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_background"
+    tools:context=".CatalogActivity">
+
+    <ListView
+        android:id="@+id/list"
+        style="@style/ListView_catalog" />
+
+    <!-- For the view if it's empty -->
+    <RelativeLayout
+        android:id="@+id/empty_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/empty_shelter_image"
+            style="@style/ImageView_empty_catalog" />
+
+        <TextView
+            android:id="@+id/empty_title_text"
+            style="@style/TextView_empty_title" />
+
+        <TextView
+            android:id="@+id/empty_subtitle_text"
+            style="@style/TextView_empty_subtitle" />
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        style="@style/FabButton"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_add_product" />
+
+</RelativeLayout>

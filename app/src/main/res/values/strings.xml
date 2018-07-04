@@ -1,0 +1,217 @@
+<resources>
+    <string name="app_name">Inventory App Stage 2</string>
+
+    <!-- Label for menu setting in catalog that inserts fake product data into the app [CHAR LIMIT=20] -->
+    <string name="action_insert_dummy_data">Insert Dummy Data</string>
+    <!-- Label for menu setting in catalog that deletes all products data in the app [CHAR LIMIT=20] -->
+    <string name="action_delete_all_entries">Delete All Products</string>
+
+    <!-- Text to display with toast when it fails the insertion of data  -->
+    <string name="msg_no_insert_data">Sorry! No data insert in invetory table</string>
+
+    <!-- Label for Product in the editor [CHAR LIMIT=30] -->
+    <string name="editor_product">Product *</string>
+    <!-- Text hint for name field in the editor [CHAR LIMIT=30] -->
+    <string name="hint_product_name">e.g. T-shirt</string>
+    <!-- Label for color in the editor [CHAR LIMIT=30] -->
+    <string name="editor_color">Color</string>
+    <!-- Label for price  in the editor [CHAR LIMIT=30] -->
+    <string name="editor_product_price">Price *</string>
+    <!-- Text hint for price field in the editor [CHAR LIMIT=30] -->
+    <string name="hint_product_price">e.g. 150</string>
+    <!-- Currency for price of the product (kilograms) [CHAR LIMIT=5] -->
+    <string name="currency_price">€</string>
+    <!-- Label for price  in the editor [CHAR LIMIT=30] -->
+    <string name="editor_product_quantity">Quantity *</string>
+    <!-- Text hint for quantity field in the editor [CHAR LIMIT=30] -->
+    <string name="hint_product_quantity">e.g. 10</string>
+    <!-- Text heading supllier section in the editor [CHAR LIMIT=30] -->
+    <string name="heading_supplier_section">Supplier Section</string>
+    <!-- Label for Supplier in the editor [CHAR LIMIT=30] -->
+    <string name="editor_supplier">Supplier *</string>
+    <!-- Text hint for supplier field in the editor [CHAR LIMIT=30] -->
+    <string name="hint_supplier">e.g. Full name</string>
+    <!-- Label for Supplier in the editor [CHAR LIMIT=30] -->
+    <string name="editor_telephone_supplier">Telephone *</string>
+    <!-- Text hint for telephone supplier field in the editor [CHAR LIMIT=30] -->
+    <string name="hint_telephone_supplier">e.g. 0012345678</string>
+
+
+    <!-- WARNING toast message to notify user that product name cannot be left empty -->
+    <string name="invalid_product_name_add_toast">Please input a valid name</string>
+    <!-- WARNING toast message to notify user that quantity cannot be left 0 in order to add new product -->
+    <string name="invalid_product_quantity_add_toast">Please input a valid quantity</string>
+    <!-- WARNING toast message to notify user that price field cannot be left empty -->
+    <string name="invalid_product_price_add_toast">Please input a valid price</string>
+    <!-- WARNING toast message to notify user that image have to be added in order to add new product -->
+    <string name="invalid_product_image_add_toast">Please input a valid image</string>
+    <!-- WARNING toast message to notify user that supplier name to be added in order to add new product -->
+    <string name="invalid_product_supplier_name_toast">Please input a valid supplier name</string>
+    <!-- WARNING toast message to notify user that supplier telephone to be added in order to add new product -->
+    <string name="invalid_product_supplier_phone_toast">Please input a valid supplier telephone</string>
+
+    <!-- Labels for dropdown color menu options  [CHAR LIMIT=20] -->
+    <string name="color_unknown">Unknown</string>
+    <string name="color_black">Black</string>
+    <string name="color_white">White</string>
+    <string name="color_red">Red</string>
+    <string name="color_blue">Blue</string>
+
+    <string name="button_minus">-</string>
+    <string name="button_plus">+</string>
+
+    <!-- Toast message in editor when new product has been successfully inserted [CHAR LIMIT=NONE] -->
+    <string name="editor_insert_product_successful">Product saved</string>
+
+    <!-- Toast message in editor when new product has failed to be inserted [CHAR LIMIT=NONE] -->
+    <string name="editor_insert_product_failed">Error with saving product</string>
+
+    <!-- Label for editor menu option save product[CHAR LIMIT=20] -->
+    <string name="action_save">Save</string>
+
+    <!-- Label for editor overflow menu option that deletes the product [CHAR LIMIT=20] -->
+    <string name="action_delete">Delete</string>
+
+    <!-- Title and subtitle text for the empty view,  [CHAR LIMIT=50] -->
+    <string name="empty_view_title_text">Grr&#8230;There is nothing&#8230;</string>
+    <string name="empty_view_subtitle_text">Get started by adding a product\n by clicking the + button below</string>
+
+    <!-- Title for the editor activity to add a new product [CHAR LIMIT=20] -->
+    <string name="editor_activity_title_new">Add a Product</string>
+
+    <!-- Title for the editor activity to edit an existing product [CHAR LIMIT=20] -->
+    <string name="editor_activity_title_edit">Edit Product</string>
+
+    <!-- Toast message in editor when current product was successfully updated [CHAR LIMIT=NONE] -->
+    <string name="editor_update_product_successful">Product updated</string>
+
+    <!-- Toast message in editor when current product has failed to be updated [CHAR LIMIT=NONE] -->
+    <string name="editor_update_product_failed">Error with updating product</string>
+
+    <!-- Toast message in editor when the image has been update [CHAR LIMIT=NONE] -->
+    <string name="editor_update_image">Added your chosen image</string>
+
+    <!-- Dialog message when user is leaving editor but hasn't saved changes [CHAR LIMIT=NONE] -->
+    <string name="unsaved_changes_dialog_msg">Discard your changes and quit editing?</string>
+
+    <!-- Dialog message when user has ghanged quantity and is leaving detail activity but hasn't saved changes [CHAR LIMIT=NONE] -->
+    <string name="unsaved_quantity_changes_dialog_msg">The quantity has changed.\n Do you want to save the change?</string>
+
+    <!-- Dialog button text for the option to save change the current product in details [CHAR LIMIT=20] -->
+    <string name="save_change">Save change</string>
+
+    <!-- Dialog button text for the option to discard a user's changes [CHAR LIMIT=20] -->
+    <string name="discard">Discard</string>
+
+    <!-- Dialog button text for the option to keep editing the current product [CHAR LIMIT=20] -->
+    <string name="keep_editing">Keep Editing</string>
+
+    <!-- Toast message in editor when current product was successfully deleted [CHAR LIMIT=NONE] -->
+    <string name="editor_delete_product_successful">Product deleted</string>
+
+    <!-- Toast message in editor when current product has failed to be deleted [CHAR LIMIT=NONE] -->
+    <string name="editor_delete_product_failed">Error with deleting product</string>
+
+    <!-- Dialog message to ask the user to confirm deleting the current product [CHAR LIMIT=NONE] -->
+    <string name="delete_dialog_msg">Delete this product?</string>
+
+    <!-- Dialog message to ask the user to confirm deleting all product in CatalogActivity [CHAR LIMIT=NONE] -->
+    <string name="delete_all_dialog_msg">Delete all products?</string>
+
+    <!-- Dialog message to ask the user to confirm deleting the current product [CHAR LIMIT=NONE] -->
+    <string name="no_field_dialog_msg">"Product not saved. No field has been edited!</string>
+
+    <!-- Dialog button text for the option to confirm deleting the current product [CHAR LIMIT=20] -->
+    <string name="delete">Delete</string>
+
+    <!-- Dialog button text for the option to cancel deletion of the current product [CHAR LIMIT=20] -->
+    <string name="cancel">Cancel</string>
+
+    <!-- Dialog button text for the option to exit of the current product [CHAR LIMIT=20] -->
+    <string name="exit">Exit</string>
+
+    <!-- Dialog message to ask the user to confirm deleting the current product [CHAR LIMIT=NONE] -->
+    <string name="all_delete_dialog_msg">Are you sure you want to delete all products?</string>
+
+    <!-- Dialog message to ask the user to confirm deleting the current product [CHAR LIMIT=NONE] -->
+    <string name="toast_msg_no_decrease">The quantity can not be less than 0</string>
+
+    <!-- Toast message rows delete [CHAR LIMIT=NONE] -->
+    <string name="toast_all_delete">row/s has been delete</string>
+
+    <!-- Text for button choose image [CHAR LIMIT=NONE] -->
+    <string name="button_choose_image">Choose image *</string>
+    <string name="title_activity_detail">DetailActivity</string>
+
+    <!-- Title for the detail activity [CHAR LIMIT=20] -->
+    <string name="detail_activity_title_edit">Detail Product id#</string>
+
+    <!-- Toast text for action setting  -->
+    <string name="toast_action_settings">Settings for the app</string>
+
+    <!-- Label for settings menu option [CHAR LIMIT=20] -->
+    <string name="action_settings">Settings</string>
+
+    <!-- Msg for empty field [CHAR LIMIT=20] -->
+    <string name="empty_field">FIELD CANNOT BE EMPTY!</string>
+
+    <!-- Msg for quanity less than 0 [CHAR LIMIT=20] -->
+    <string name="less_than_zero_field">FIELD CANNOT BE LESS THAN 0</string>
+
+    <!-- Label for indicates required field -->
+    <string name="required_field">* Indicates required field</string>
+
+    <!-- Labels menu for single item in the list_item [CHAR LIMIT=20] -->
+    <string name="action_list_details">Details</string>
+    <string name="action_list_edit">Edit</string>
+    <string name="action_list_delete">Delete</string>
+
+    <string name="descr_image_product">Image of product</string>
+    <string name="descr_list_DotsButton">Options for the productt</string>
+    <string name="descr_empty_image">Empty inventory image</string>
+
+    <string name="tools_name">Name product</string>
+    <string name="tools_price">$99.99</string>
+
+    <!-- Heading in content_detail [CHAR LIMIT=20] -->
+    <string name="heading_image">Product image</string>
+    <string name="heading_product">Product details</string>
+    <string name="heading_supplier">Supplier details</string>
+
+    <!-- Label in content_detail [CHAR LIMIT=20] -->
+    <string name="label_name_product">Name</string>
+    <string name="label_price">Price</string>
+    <string name="label_quantity">Quantity</string>
+    <string name="label_in_stock">Items in stock</string>
+    <string name="label_color">Color</string>
+    <string name="label_name_supplier">Name</string>
+    <string name="label_phone_supplier">Telephone</string>
+
+    <!-- Tools in content_detail [CHAR LIMIT=20] -->
+    <string name="tools_name_product">Name product</string>
+    <string name="tools_price_product">$99.99</string>
+    <string name="tools_quantity">Quantity</string>
+    <string name="tools_color">Blue</string>
+    <string name="tools_name_supplier">Name supplier</string>
+    <string name="tools_phone_supplier">0123456789</string>
+
+    <!-- Button for Call supplier [CHAR LIMIT=20] -->
+    <string name="call_supplier">Call supplier</string>
+
+    <!-- Message for invalid telephone number [CHAR LIMIT=20] -->
+    <string name="toast_invalid_telephone">The telephone number is not valid</string>
+
+    <!-- Image description in content_detail  -->
+    <string name="desc_image_product">The image of current product</string>
+    <string name="desc_image_color_product">Color of current product</string>
+
+    <!-- Label quantity in list  -->
+    <string name="list_label_quantity">%1$d QTY</string>
+
+    <!-- Text for button SALE in the list  -->
+    <string name="list_label_button_sale">SALE</string>
+
+    <!-- Tools in list  -->
+    <string name="tools_list_quantity">100 QTY</string>
+
+</resources>

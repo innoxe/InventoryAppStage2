@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Options for color spinner -->
+    <string-array name="array_color_options">
+        <item>@string/color_unknown</item>
+        <item>@string/color_black</item>
+        <item>@string/color_white</item>
+        <item>@string/color_red</item>
+        <item>@string/color_blue</item>
+    </string-array>
+
+    <array name="array_colors">
+        <item>@color/color_unknown</item>
+        <item>@color/color_black</item>
+        <item>@color/color_white</item>
+        <item>@color/color_red</item>
+        <item>@color/color_blue</item>
+    </array>
+
+</resources>

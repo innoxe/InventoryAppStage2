@@ -1,0 +1,223 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Theme of the editor -->
+    <style name="EditorTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/editorColorPrimary</item>
+        <item name="colorPrimaryDark">@color/editorColorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Style TextView for product name in the list -->
+    <style name="ListProductNameStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textColor">@color/list_name_product</item>
+    </style>
+
+    <!-- Style TextView for product name in the list -->
+    <style name="ListPriceStyle">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_marginTop">4dp</item>
+        <item name="android:background">@drawable/shape_rounded_textview</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!-- Style 3 dots icon menu in the list -->
+    <style name="ListDotsIconStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:src">@drawable/ic_more_vertical</item>
+    </style>
+
+    <!-- activity_catalog.xml style ListView  -->
+    <style name="ListView_catalog">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_marginLeft">@dimen/ListView_catalog_margin</item>
+        <item name="android:layout_marginRight">@dimen/ListView_catalog_margin</item>
+        <item name="android:divider">@null</item>
+        <item name="android:dividerHeight">@dimen/ListView_catalog_divider</item>
+    </style>
+
+    <!-- activity_catalog.xml style empty_shelter_image  -->
+    <style name="ImageView_empty_catalog">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:contentDescription">@string/descr_empty_image</item>
+        <item name="android:src">@drawable/ic_nothing</item>
+    </style>
+
+    <!-- activity_catalog.xml style empty title  -->
+    <style name="TextView_empty_title">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_below">@+id/empty_shelter_image</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:paddingTop">@dimen/title_empty_catalog_paddingTop</item>
+        <item name="android:text">@string/empty_view_title_text</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+
+    <!-- activity_catalog.xml style empty subtitle  -->
+    <style name="TextView_empty_subtitle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_below">@+id/empty_title_text</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:paddingTop">@dimen/sub_title_empty_catalog_paddingTop</item>
+        <item name="android:text">@string/empty_view_subtitle_text</item>
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textColor">@color/empty_sub_title</item>
+    </style>
+
+    <!-- content_detail.xml heading TextView  -->
+    <style name="TextView_heading">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/detail_margin_top_heading</item>
+        <item name="android:background">@color/main_background</item>
+        <item name="android:textColor">@color/colorAccent</item>
+    </style>
+
+    <!-- content_detail.xml heading View -->
+    <style name="view_heading">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/detail_view_height</item>
+        <item name="android:background">@color/colorAccent</item>
+    </style>
+
+    <!-- content_detail.xml label heading TextView  -->
+    <style name="TextView_label_heading">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/detail_margin_top_heading</item>
+        <item name="android:textColor">@color/label_heading_detail</item>
+    </style>
+
+    <!-- content_detail.xml text big TextView  -->
+    <style name="TextView_text_big">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/detail_text_big</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <!-- content_detail.xml text small TextView  -->
+    <style name="TextView_text_small">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/detail_text_small</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+
+    <!-- Style for a category in the editor -->
+    <style name="ProductEditorStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:textColor">@color/colorAccent</item>
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+    </style>
+
+    <!-- Style for an EditText field in the editor -->
+    <style name="EditorFieldStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+
+    <!-- Style for an EditText field in the editor -->
+    <style name="EditorFieldStyleSimple">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+
+    <!-- Style for quantity EditText field in the editor -->
+    <style name="EditorQuantityFieldStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:inputType">number</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_toLeftOf">@id/button_increase_n</item>
+        <item name="android:layout_toRightOf">@id/button_decrease_n</item>
+
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+    </style>
+
+
+    <!-- Style for the measurement units for an EditText field in the editor -->
+    <style name="EditorCurrencyStyle">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:paddingRight">4dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+    </style>
+
+    <!-- Style for spinner in the editor -->
+    <style name="EditorSpinnerStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/editor_spinner_height</item>
+        <item name="android:paddingRight">@dimen/editor_spinner_pad_right</item>
+        <item name="android:spinnerMode">dropdown</item>
+    </style>
+
+    <!-- Style for some parent view in the editor -->
+    <style name="EditorParentView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">2</item>
+        <item name="android:paddingLeft">@dimen/editor_editText_pad_left</item>
+    </style>
+
+
+    <!-- Style for the Buttons's for the value in edit activity -->
+    <style name="value_buttons_edit">
+        <item name="android:layout_width">@dimen/button_value_edit</item>
+        <item name="android:layout_height">@dimen/button_value_edit</item>
+    </style>
+
+    <!-- Fab button  -->
+    <style name="FabButton">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_gravity">bottom|end</item>
+        <item name="android:layout_margin">@dimen/fab_margin</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

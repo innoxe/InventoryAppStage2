@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- Primary color for the editor -->
+    <color name="editorColorPrimary">#2D3640</color>
+    <!-- Primary dark color for the editor -->
+    <color name="editorColorPrimaryDark">#394450</color>
+
+    <color name="main_background">#EEEEEE</color>
+
+    <!-- Color for products -->
+    <color name="color_unknown">#cccccc</color>
+    <color name="color_black">#000000</color>
+    <color name="color_white">#ffffff</color>
+    <color name="color_red">#ff0000</color>
+    <color name="color_blue">#0000ff</color>
+
+    <!-- Colors for views in list_item.xml -->
+    <color name="list_name_product">#2B3D4D</color>
+
+    <color name="empty_sub_title">#A2AAB0</color>
+
+    <color name="label_heading_detail">#81898e</color>
+
+</resources>

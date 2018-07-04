@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="activity_margin">16dp</dimen>
+    <dimen name="button_value_edit">40dp</dimen>
+
+    <dimen name="image_product_list_width">90dp</dimen>
+
+    <dimen name="list_views_margin">4dp</dimen>
+
+    <dimen name="ListView_catalog_margin">8dp</dimen>
+    <dimen name="ListView_catalog_divider">4dp</dimen>
+    <dimen name="title_empty_catalog_paddingTop">16dp</dimen>
+    <dimen name="sub_title_empty_catalog_paddingTop">8dp</dimen>
+
+    <!-- CardView -->
+    <dimen name="card_corner_radius">4dp</dimen>
+    <dimen name="card_elevetion">2dp</dimen>
+
+    <!-- Most dimens of detail activity -->
+    <dimen name="detail_LinearLayout_padding">12dp</dimen>
+    <dimen name="detail_margin_top_heading">8dp</dimen>
+    <dimen name="detail_image_height">110dp</dimen>
+    <dimen name="detail_image_margintTop">12dp</dimen>
+    <dimen name="detail_view_height">1dp</dimen>
+    <dimen name="detail_text_big">20sp</dimen>
+    <dimen name="detail_text_small">16sp</dimen>
+    <dimen name="detail_price_marginLeft">8dp</dimen>
+
+
+    <!-- Most dimens of editor activity -->
+    <dimen name="editor_spinner_height">48dp</dimen>
+    <dimen name="editor_spinner_pad_right">16dp</dimen>
+    <dimen name="editor_editText_pad_left">4dp</dimen>
+    <dimen name="editor_ImageView_height">90dp</dimen>
+    <dimen name="editor_supplier_section_text">16sp</dimen>
+    <dimen name="editor_supplier_section_margin_top">10dp</dimen>
+    <dimen name="editor_parent_image_padding">4dp</dimen>
+
+</resources>
